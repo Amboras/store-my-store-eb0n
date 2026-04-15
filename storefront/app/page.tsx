@@ -7,7 +7,9 @@ import { ArrowRight, Truck, Shield, RotateCcw } from 'lucide-react'
 import CollectionSection from '@/components/marketing/collection-section'
 import { useCollections } from '@/hooks/use-collections'
 import { trackMetaEvent } from '@/lib/meta-pixel'
-import { HERO_PLACEHOLDER, LIFESTYLE_PLACEHOLDER } from '@/lib/utils/placeholder-images'
+// Kitchen gadget images (minimalist, Unsplash)
+const HERO_PLACEHOLDER = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'
+const LIFESTYLE_PLACEHOLDER = 'https://images.unsplash.com/photo-1585515320310-259814833e62?w=1200&q=80'
 
 export default function HomePage() {
   const { data: collections, isLoading } = useCollections()
@@ -65,7 +67,7 @@ export default function HomePage() {
           <div className="relative aspect-[4/5] lg:aspect-[3/4] bg-muted rounded-sm overflow-hidden animate-fade-in">
             <Image
               src={HERO_PLACEHOLDER}
-              alt="Hero - New Collection"
+              alt="Minimalist kitchen gadgets flat lay"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -109,7 +111,7 @@ export default function HomePage() {
             <div className="aspect-[4/5] bg-muted rounded-sm overflow-hidden relative">
               <Image
                 src={LIFESTYLE_PLACEHOLDER}
-                alt="Lifestyle - Our Philosophy"
+                alt="Minimalist kitchen tools and cookware"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
