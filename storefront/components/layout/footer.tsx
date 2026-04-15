@@ -52,7 +52,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
-              Curated products crafted with care. Quality you can feel, design you can see.
+              Premium kitchen gadgets for every home cook. Tools that make your time in the kitchen smarter and more enjoyable.
             </p>
           </div>
 

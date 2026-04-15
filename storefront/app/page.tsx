@@ -34,13 +34,13 @@ export default function HomePage() {
           {/* Text Content */}
           <div className="space-y-6 animate-fade-in-up">
             <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-              New Collection
+              New Arrivals
             </p>
             <h1 className="text-display font-heading font-semibold text-balance">
-              Elevate Your Everyday
+              Cook Smarter, Live Better
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Thoughtfully designed products that bring beauty and function to your daily rituals.
+              Premium kitchen gadgets that make cooking faster, easier, and a lot more enjoyable.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Link
@@ -118,11 +118,11 @@ export default function HomePage() {
             <div className="space-y-6 lg:max-w-md">
               <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">Our Philosophy</p>
               <h2 className="text-h2 font-heading font-semibold">
-                Crafted With Intention
+                Tools Built for Real Kitchens
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Every product in our collection is chosen for its quality, design, and the story behind it.
-                We believe in fewer, better things — pieces that last and bring joy to everyday moments.
+                Every gadget we carry is tested, practical, and built to last. We believe great cooking
+                starts with the right tools — ones that inspire you to get in the kitchen every day.
               </p>
               <Link
                 href="/about"
@@ -171,7 +171,7 @@ export default function HomePage() {
         <div className="container-custom max-w-xl text-center">
           <h2 className="text-h2 font-heading font-semibold">Stay in Touch</h2>
           <p className="mt-3 text-muted-foreground">
-            Be the first to know about new arrivals, exclusive offers, and more.
+            Be the first to know about new kitchen gadgets, exclusive deals, and chef-approved tips.
           </p>
           <form className="mt-8 flex gap-2" onSubmit={handleNewsletterSubmit}>
             <input
