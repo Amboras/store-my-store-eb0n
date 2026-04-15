@@ -8,8 +8,8 @@ import CollectionSection from '@/components/marketing/collection-section'
 import { useCollections } from '@/hooks/use-collections'
 import { trackMetaEvent } from '@/lib/meta-pixel'
 // Kitchen gadget images (minimalist, Unsplash)
-const HERO_PLACEHOLDER = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'
-const LIFESTYLE_PLACEHOLDER = 'https://images.unsplash.com/photo-1585515320310-259814833e62?w=1200&q=80'
+const HERO_PLACEHOLDER = 'https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=1200&q=80'
+const LIFESTYLE_PLACEHOLDER = 'https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=1200&q=80'
 
 export default function HomePage() {
   const { data: collections, isLoading } = useCollections()
@@ -67,7 +67,7 @@ export default function HomePage() {
           <div className="relative aspect-[4/5] lg:aspect-[3/4] bg-muted rounded-sm overflow-hidden animate-fade-in">
             <Image
               src={HERO_PLACEHOLDER}
-              alt="Minimalist kitchen gadgets flat lay"
+              alt="Kitchen gadgets on a clean white surface"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -111,7 +111,7 @@ export default function HomePage() {
             <div className="aspect-[4/5] bg-muted rounded-sm overflow-hidden relative">
               <Image
                 src={LIFESTYLE_PLACEHOLDER}
-                alt="Minimalist kitchen tools and cookware"
+                alt="Minimalist kitchen tools arranged neatly"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
